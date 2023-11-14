@@ -1,0 +1,396 @@
+header {
+    background-color: #EAC926;
+    padding: 15px;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Open Sans','Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+footer{
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    position: relative;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section p{
+    margin-top: 0px;
+}
+
+section h4{
+    margin: 0px;
+}
+
+nav {
+    display: none;
+}
+
+nav ul{
+    padding-left: 0px;;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+article{
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+article img{
+    width: 100%;
+}
+
+article:hover p#descripcion{
+    display: block;
+} 
+
+/* estilo header con logo, search y texto */
+.header-inicial{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbox{
+    display: inline-flex;
+    width: 49%;
+}
+
+.searchbox input{
+    width: 100%;
+    border: none;
+} 
+
+.searchbox form{
+    display: flex;
+    flex-grow: 0.90;
+}
+
+.txtCuotas{
+    text-align: center;
+    width: 100%;
+}
+
+.logo{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+
+#busqueda{
+    background-color: #ebebeb;
+    padding: 4px;
+ }
+/* fin estilo header */
+.banner{
+    width: 100%;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    border-radius: 5px;
+    padding: 6px 6px;
+    margin-bottom: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* estilo icono camion */
+.detalle > #envio {
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    justify-content: center;
+    align-items: center;
+    color: #39b54a;
+    transition: all 800ms;
+}
+
+#envio:hover{
+    transform: rotate(-90deg);
+}
+/* fin estilo icono camion*/
+
+/* seccion articulos*/
+#titulares{
+    font-size: 24px;
+    color: #666;
+} 
+
+.detalle{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.precioDescuento{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#descuento{
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
+    margin: 0px;
+}
+#precio{
+    font-size: 18px;
+    margin: 0px;
+    width: 30%;
+}
+
+#descripcion{
+    color: #666;
+    text-align: left;
+    font-size: 16px;
+    padding-top: 10px;
+    margin: 0px;
+    display: none;
+}
+/* sombra en articulos */
+.articulos article{
+    transition: all 500ms;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+/* fin sombra en articulos */
+
+/* fin seccion articulos*/
+
+#icono{
+    padding-top: 30px;
+    color: #03264C;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#copyright{
+    padding-top: 15px;
+    color: #666;
+}
+
+/* FORM login */
+.formulario {
+    padding: 20px 0px;
+    font-size: 14px;
+}
+
+.formulario label, button{
+    display: block;
+    font-weight: bold;
+}
+
+.campo-input{
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 8px 5px;
+    margin-top: 4px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin: 0px;
+} 
+
+#usuarioLogin:invalid, #passwordLogin:invalid {
+    border: 1px solid #ff0000;
+  }
+
+.formulario input:focus .error{
+    background-color: #EAC926;
+} 
+
+.formulario button{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #03264C;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.enviarLogin{
+    transition: all 0.5s;
+}
+
+.enviarLogin:hover{
+    background-color: #0022AA;
+}
+/* FIN FORM login */
+
+/* FORM REGISTER */
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones button{
+    padding: 10px 30px;
+    width: auto;
+}
+
+.listar{
+    width: auto;
+    display: flex;
+}
+
+.listar label{
+    padding: 10px;
+    font-weight: normal;
+}
+/* FIN FORM REGISTER*/
+
+@media (min-width: 361px){
+    .txtCuotas{
+        width: auto
+    }
+
+    .searchbox{
+        width: auto;
+        display: inline-flex;
+    }
+
+    /* estilo menu */
+    .burger-menu{
+        display: none;
+    }
+
+    header nav ul{
+        list-style: none;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li{
+        padding: 0 6px;
+        list-style: none;
+    }
+    /* fin menu*/
+
+    section .articulos{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    article{
+        flex-basis: 200px;
+    } 
+
+    .logo{
+        width: 30%;
+    }
+}
+
+@media (min-width: 769px){
+    .searchbox{
+        width: unset;
+        display: flex;
+        flex-grow: 0.75;
+    }
+
+    /* estilo menu */
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        padding: 0 10px;
+    }
+    /* fin estilo menu */
+    
+    #seccionArticulos{
+        height: 500px;
+    }
+
+    section .articulos{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    article{
+        flex-basis: 10%;
+    }  
+
+    .formulario{
+        width: 60%;
+        margin: auto;
+    }
+
+    .boxFooter{
+        display: flex;
+    }
+
+    .boxFooter #icono{
+        transition: all 0.5s;
+    }
+
+    .boxFooter #icono:hover{
+        color: #39b54a;
+    }
+
+    .centrar{
+        padding: 0 10px;
+    }
+}
