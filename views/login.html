@@ -16,10 +16,14 @@
 <body>
     <header>
         <div class="header-inicial">
-            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de la empresa">
+            <div class="box-logo-header">
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de la empresa">
+           </div>
+           
             <div class="searchbox">
                 <form action="/" method="get" >
-                    <input type="text" id="" placeholder="Buscar producto, marcas"> <i id="busqueda" class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="" placeholder="Buscar producto, marcas"> 
+                    <i id="busqueda" class="fa-solid fa-magnifying-glass"></i>
                 </form>      
             </div>
        
@@ -28,7 +32,6 @@
                 Comprá en cuotas y sin tarjeta de crédito
             </p>
         </div>
-      
         
         <nav>
             <ul>
@@ -53,11 +56,9 @@
     <main>
         <form action="/" method="post" class="formulario">
            <label for="usuarioLogin">Nombre de usuari@:</label>
-           <p name="errorUsuario" id="errorUsuario" class="error" >Usuari@ requerido</p>
            <input type="text" name="usuarioLogin" id="usuarioLogin" class="campo-input" required/>
            
            <label for="passwordLogin">Contraseña:</label>
-           <p name="errorPass" id="errorPass" class="error" >Contraseña requerida</p>
            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" required/>
 
            <button class="enviarLogin" type="submit">Enviar</button>

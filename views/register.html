@@ -16,12 +16,17 @@
 <body>
     <header>
         <div class="header-inicial">
-            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de la empresa">
+            <div class="box-logo-header">
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de la empresa">
+           </div>
+           
             <div class="searchbox">
                 <form action="/" method="get" >
-                    <input type="text" id="" placeholder="Buscar producto, marcas"> <i id="busqueda" class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="" placeholder="Buscar producto, marcas"> 
+                    <i id="busqueda" class="fa-solid fa-magnifying-glass"></i>
                 </form>      
             </div>
+       
             <p class="txtCuotas">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
                 Comprá en cuotas y sin tarjeta de crédito
@@ -51,20 +56,16 @@
     </section>
     <main>
         <form action="/" method="post" class="formulario">
-            <label for="nomApe">Nombre y apellido:</label>
-            <input type="text" name="nomApe" id="nomApe" class="campo-input"/>
+            <input type="text" name="nomApe" id="nomApe" class="campo-input" placeholder="Nombre y apellido"/>
         
-            <label for="usuarioReg">Nombre de usuari@:</label>
-            <input type="text" name="usuarioReg" id="usuarioReg" class="campo-input" />
+            <input type="text" name="usuarioReg" id="usuarioReg" class="campo-input" placeholder="Nombre de usuari@" />
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" class="campo-input"/>
+            <input type="email" name="email" id="email" class="campo-input" placeholder="Email"/>
 
             <label for="fechaNac">Fecha de nacimiento:</label>
             <input type="date" name="fechaNac" id="fechaNac" class="campo-input" />
             
-            <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio" id="domicilio"  class="campo-input"/>
+            <input type="text" name="domicilio" id="domicilio"  class="campo-input" placeholder="Domicilio"/>
 
             <label for="perfil">Perfil de usuario:</label>
             <div class="listar"> 
@@ -92,11 +93,9 @@
             <label for="foto">Foto de usuario:</label>
             <input type="file" accept="png, jpg" name="foto" id="foto" class="campo-input"/>
 
-            <label for="passwordLogin">Contraseña:</label>
-            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input"/>
+            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" placeholder="Contraseña"/>
         
-            <label for="confirmPass">Confirmar contraseña:</label>
-            <input type="password" name="confirmPass" id="confirmPass" class="campo-input"/>
+            <input type="password" name="confirmPass" id="confirmPass" class="campo-input" placeholder="Confirmar contraseña"/>
             
             <div class="botones">
                 <button type="submit">Enviar</button>
