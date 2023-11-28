@@ -94,6 +94,15 @@ article:hover p#descripcion {
 
 .logo {
   margin-bottom: 10px;
+  width: auto; /* Ajusta el tamaño inicial del logo */
+  height: auto; /* Esto mantendrá la proporción del logo */
+  animation: moveBox 2s ease-in-out infinite ;
+}
+
+@keyframes moveBox {
+  0% { opacity: 30% }
+  25% {  opacity: 100% }
+  100% { opacity: 30% }
 }
 
 #busqueda {
@@ -206,7 +215,7 @@ article:hover {
 
 #icono {
   padding-top: 30px;
-  color: #03264c;
+  color: #0044AA;
   margin-bottom: 10px;
   font-size: 2em;
 }
@@ -214,6 +223,7 @@ article:hover {
 #copyright {
   padding-top: 15px;
   color: #666;
+  text-align: center;
 }
 
 /* FORM login */
@@ -247,7 +257,7 @@ button {
 .formulario button {
   width: 100%;
   box-sizing: border-box;
-  background-color: #03264c;
+  background-color: #0044AA;
   color: #fff;
   padding: 10px;
   border: none;
@@ -259,7 +269,7 @@ button {
 }
 
 .enviarLogin:hover {
-  background-color: #0022aa;
+  background-color: black;
 }
 /* FIN FORM login */
 
