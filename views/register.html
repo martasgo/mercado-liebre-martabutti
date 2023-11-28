@@ -57,19 +57,24 @@
     <main>
         <form action="/" method="post" class="formulario">
             <label for="nomApe">Nombre y apellido:</label>
-            <input type="text" name="nomApe" id="nomApe" class="campo-input" placeholder="Nombre y apellido"/>
+            <p name="errorNombre" id="errorNombre" class="error" >Nombre y apellido requerido. Deben ser solo letra.</p>
+            <input type="text" name="nomApe" id="nomApe" class="campo-input" placeholder="Nombre y apellido" required/>
         
-            <label for="nomApe">Nombre de usuario@:</label>
-            <input type="text" name="usuarioReg" id="usuarioReg" class="campo-input" placeholder="Nombre de usuari@" />
+            <label for="usuarioReg">Nombre de usuario@:</label>
+            <p name="errorUsuario" id="errorUsuario" class="error" >Nombre de usuario requerido. Pueden ser letras y número, sin caracteres especiales.</p>
+            <input type="text" name="usuarioReg" id="usuarioReg" class="campo-input" placeholder="Nombre de usuari@" required />
 
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" class="campo-input" placeholder="Email"/>
+            <p name="errorEmail" id="errorEmail" class="error" >Email requerido.</p>
+            <input type="email" name="email" id="email" class="campo-input" placeholder="Email" required/>
 
             <label for="fechaNac">Fecha de nacimiento:</label>
-            <input type="date" name="fechaNac" id="fechaNac" class="campo-input" />
+            <p name="errorFecha" id="errorFecha" class="error" >Fecha requerida, formato dd/mm/aaaa, solo números.</p>
+            <input type="date" name="fechaNac" id="fechaNac" class="campo-input" required/>
             
             <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio" id="domicilio"  class="campo-input" placeholder="Domicilio"/>
+            <p name="errorDom" id="errorDom" class="error" >Domicilio requerido</p>
+            <input type="text" name="domicilio" id="domicilio"  class="campo-input" placeholder="Domicilio" required/>
 
             <label for="perfil">Perfil de usuario:</label>
             <div class="listar"> 
@@ -97,11 +102,13 @@
             <label for="foto">Foto de usuario:</label>
             <input type="file" accept="png, jpg" name="foto" id="foto" class="campo-input"/>
 
-            <label for="password">Password:</label>
-            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" placeholder="Contraseña"/>
+            <label for="password">Contraseña:</label>
+            <p name="errorPassw" id="errorPassw" class="error" >Debe ingresar contraseña, mínimio 8 caracteres, sin símbolos.</p>
+            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" placeholder="Contraseña" required/>
         
-            <label for="confirmPass">Confirmar password:</label>
-            <input type="password" name="confirmPass" id="confirmPass" class="campo-input" placeholder="Confirmar contraseña"/>
+            <label for="confirmPass">Confirmar contraseña:</label>
+            <p name="errorConfirm" id="errorConfirm" class="error" >Este campo debe ser igual al ingresado en contraseña.</p>
+            <input type="password" name="confirmPass" id="confirmPass" class="campo-input" placeholder="Confirmar contraseña" required/>
             
             <div class="botones">
                 <button class="enviarLogin" type="submit">Enviar</button>
